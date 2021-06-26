@@ -1,0 +1,1551 @@
+<html>
+
+<head>
+    <title>Stay Home Safe</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <link rel="icon" href="health-logo.png" type="image/x-icon">
+    <style>
+        body {
+            background-color: #f0f0f0;
+        }
+
+        .navbar-brand {
+            color: #2d5a6b;
+        }
+
+        .nav-link {
+            color: #222222;
+            font-weight: 900;
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14.5px;
+            font-weight: 600;
+        }
+
+        .nav-link:hover {
+            color: #e1e1e1;
+            background-color: #802bcf;
+        }
+
+        .navbar-active {
+            color: #e1e1e1;
+            background-color: #802bcf;
+        }
+
+        .nav-item {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .alphabets {
+            border-radius: 50%;
+            margin-top: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
+            text-transform: uppercase;
+        }
+
+        .disease-headings {
+            border-left: 1px solid rgb(131, 4, 4);
+            color: rgb(226, 97, 97);
+            font-weight: 400;
+            padding-left: 10px;
+            font-size: x-large;
+            transition: 0.3s;
+        }
+
+        .disease-headings:hover {
+            color: rgb(131, 4, 4);
+        }
+
+        .disease-description {
+            font-size: large !important;
+            padding-left: 30px !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar starts -->
+    <nav class="navbar navbar-expand-xl bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-4 mt-1" href="home.html"
+                style="font-family: 'Lora', serif; font-weight: 600; font-size: 30px;">
+                <img src="health-logo-removebg-preview.png" height="50px" style="margin-right: 10px;">
+                Health Care
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="emergency.html">emergency</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-active" href="#">General Health</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="one-page-booking.html">booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="usefulContacts.html">useful contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="user-profile.html" class="nav-link" style="padding: 0 !important; border-radius: 50%;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar ends -->
+
+
+    <!-- matter starts -->
+    <div class="container-fluid">
+        <div class="container">
+            <h1 style="color: #5d475f;" class="text-center pt-3">All Health Information</h1>
+            <h4 style="color: #5d475f;" class="text-center pb-1">──── Clear. Easy. Fast Access. ────</h4>
+            <p class="text-center pt-0 mt-0 text-muted" style="font-size: larger;">If you are looking for doctors,
+                medications or health accessories <a href="one-page-booking.html">click here.</a></p><br><br>
+            <h3 style="color: #5d475f;" class="text-center mb-0">Mental and Physical Health Awareness</h3>
+            <h5 class="text-center">──────── </h5>
+            <div class="card text-white text-center mb-5">
+                <img src="https://www.communityreachcenter.org/wp-content/uploads/2019/05/CRC_Mental-Health-Awareness-Month.jpg"
+                    class="card-img">
+                <div class="card-img-overlay" style="background-color: #22222286;">
+                    <h1 class="mt-5 pt-5">Your Health is Important</h1>
+                    <p class="mt-5 pt-3 mx-5 px-5" style="font-size: x-large;">Awareness plays a key role in our
+                        approach to improving access to healthcare. We seek to empower communities, medical
+                        professionals and patients with appropriate tools, information and skills so that they can make
+                        high-quality, informed decisions on prevention, diagnosis, treatment, care, and support.
+                    </p>
+                    <a href="health-awarness.html" class="btn btn-light">Learn More</a>
+                </div>
+            </div>
+            <div class="row mb-5 text-center">
+                <h3 class="text-center mb-0">All Health Problems Listed in a Alphabetical Order</h3>
+                <h5 class="text-center">────────</h5>
+                <div class="d-inline">
+                    <a href="#a" class="btn btn-secondary px-3 py-2 alphabets">a</a>
+                    <a href="#b" class="btn btn-secondary px-3 py-2 alphabets">b</a>
+                    <a href="#c" class="btn btn-secondary px-3 py-2 alphabets">c</a>
+                    <a href="#d" class="btn btn-secondary px-3 py-2 alphabets">d</a>
+                    <a href="#e" class="btn btn-secondary px-3 py-2 alphabets">e</a>
+                    <a href="#f" class="btn btn-secondary px-3 py-2 alphabets">f</a>
+                    <a href="#g" class="btn btn-secondary px-3 py-2 alphabets">g</a>
+                    <a href="#h" class="btn btn-secondary px-3 py-2 alphabets">h</a>
+                    <a href="#i" class="btn btn-secondary px-3 py-2 alphabets">i</a>
+                    <a href="#j" class="btn btn-secondary px-3 py-2 alphabets">j</a>
+                    <a href="#k" class="btn btn-secondary px-3 py-2 alphabets">k</a>
+                    <a href="#l" class="btn btn-secondary px-3 py-2 alphabets">l</a>
+                    <a href="#m" class="btn btn-secondary px-3 py-2 alphabets">m</a>
+                    <br>
+                    <a href="#n" class="btn btn-secondary px-3 py-2 alphabets">n</a>
+                    <a href="#o" class="btn btn-secondary px-3 py-2 alphabets">o</a>
+                    <a href="#p" class="btn btn-secondary px-3 py-2 alphabets">p</a>
+                    <a href="#q" class="btn btn-secondary px-3 py-2 alphabets">q</a>
+                    <a href="#r" class="btn btn-secondary px-3 py-2 alphabets">r</a>
+                    <a href="#s" class="btn btn-secondary px-3 py-2 alphabets">s</a>
+                    <a href="#t" class="btn btn-secondary px-3 py-2 alphabets">t</a>
+                    <a href="#u" class="btn btn-secondary px-3 py-2 alphabets">u</a>
+                    <a href="#v" class="btn btn-secondary px-3 py-2 alphabets">v</a>
+                    <a href="#w" class="btn btn-secondary px-3 py-2 alphabets">w</a>
+                    <a href="#x" class="btn btn-secondary px-3 py-2 alphabets">x</a>
+                    <a href="#y" class="btn btn-secondary px-3 py-2 alphabets">y</a>
+                    <a href="#z" class="btn btn-secondary px-3 py-2 alphabets">z</a>
+                </div>
+            </div>
+
+            <div class="container mt-5" id="a">
+                <h1 style="font-family: 'Mate SC', serif;" class="ps-2">A</h1>
+                <hr>
+                <div class="container mb-4">
+                    <a href="disease1(A).html" style="text-decoration: none;">
+                        <h2 class="disease-headings">A1C</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Glycated hemoglobin is a form of hemoglobin that is chemically linked to a sugar. Most
+                        monosaccharides, including glucose, galactose and fructose, spontaneously bond with hemoglobin,
+                        when present in the bloodstream of humans.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Acne</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A skin condition that occurs when hair follicles plug with oil and dead skin cells.
+                        Acne is most common in teenagers and young adults. <br> Symptoms range from uninflamed
+                        blackheads to pus-filled pimples or large, red and tender bumps.
+                        Treatments include over-the-counter creams and cleanser, as well as prescription antibiotics.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Adrenal Gland Disorders</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        The adrenal glands are small glands located on top of each kidney. They produce hormones that
+                        you can't live without, including sex hormones and cortisol. Cortisol helps you respond to
+                        stress and has many other important functions.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Age-Related Macular Degeneration</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        An eye disease that causes vision loss.
+                        Macular degeneration causes loss in the centre of the field of vision. <br> In dry macular
+                        degeneration, the centre of the retina deteriorates. With wet macular degeneration, leaky blood
+                        vessels grow under the retina.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Alcohol Overdose</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A chronic disease characterised by uncontrolled drinking and preoccupation with alcohol.
+                        Alcoholism is the inability to control drinking due to both a physical and emotional dependence
+                        on alcohol.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Alcoholism and Alcohol Abuse</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Glycated hemoglobin is a form of hemoglobin that is chemically linked to a sugar. Most
+                        monosaccharides, including glucose, galactose and fructose, spontaneously bond with hemoglobin,
+                        when present in the bloodstream of humans.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Alzheimer’s Disease</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A progressive disease that destroys memory and other important mental functions.
+                        Brain cell connections and the cells themselves degenerate and die, eventually destroying memory
+                        and other important mental functions.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="disease(cancerC,G,H,I,K,L,N,O).html" style="text-decoration: none;">
+                        <h2 class="disease-headings">Anal cancer</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Anal cancer is an uncommon type of cancer that occurs in the anal canal. The anal canal is a
+                        short tube at the end of your rectum through which stool leaves your body.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Anaemia</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A condition in which the blood doesn't have enough healthy red blood cells.
+                        Anaemia results from a lack of red blood cells or dysfunctional red blood cells in the body.
+                        This leads to reduced oxygen flow to the body's organs.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Ankylosing Spondylitis</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        An inflammatory arthritis affecting the spine and large joints.
+                        The condition is more common among men and usually begins in early adulthood.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Anxiety Disorders</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A mental health disorder characterised by feelings of worry, anxiety or fear that are strong
+                        enough to interfere with one's daily activities.
+                        Examples of anxiety disorders include panic attacks, obsessive-compulsive disorder and
+                        post-traumatic stress disorder.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Arthritis</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Inflammation of one or more joints, causing pain and stiffness that can worsen with age.
+                        Different types of arthritis exist, each with different causes including wear and tear,
+                        infections and underlying diseases.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Asthma</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Asthma is a condition in which your airways narrow and swell and may produce extra mucus. This
+                        can make breathing difficult and trigger coughing, a whistling sound (wheezing) when you breathe
+                        out and shortness of breath.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Attention Deficit Hyperactivity Disorder</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A chronic condition including attention difficulty, hyperactivity and impulsiveness.
+                        ADHD often begins in childhood and can persist into adulthood. It may contribute to low
+                        self-esteem, troubled relationships and difficulty at school or work.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Autism Spectrum Disorder</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Autism spectrum disorder (ASD) is a complex developmental condition that involves persistent
+                        challenges in social interaction, speech and nonverbal communication, and restricted/repetitive
+                        behaviors. The effects of ASD and the severity of symptoms are different in each person.
+                    </p>
+                </div>
+            </div>
+
+            <div class="container mt-5" id="b">
+                <h1 style="font-family: 'Mate SC', serif;" class="ps-2">B</h1>
+                <hr>
+                <div class="container mb-4">
+                    <a href="disease(B,J).html" style="text-decoration: none;">
+                        <h2 class="disease-headings">Back Pain</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Physical discomfort occurring anywhere on the spine or back, ranging from mild to disabling.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Bedwetting</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Bedwetting is the loss of bladder control during the night. The medical term for bedwetting is
+                        nocturnal (nighttime) enuresis. Bedwetting can be an uncomfortable issue, but in many cases it's
+                        perfectly normal. Bedwetting is a standard developmental stage for some children.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Behçet’s Disease</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A rare disorder causing inflammation in blood vessels.
+                        The cause of Behçet's disease is unknown, but it may be the body's immune system attacking
+                        healthy cells (autoimmune disorder).
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="disease(cancerC,G,H,I,K,L,N,O).html" style="text-decoration: none;">
+                        <h2 class="disease-headings">Bile Duct Cancer</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A cancer in the slender tubes that carry bile, the digestive fluid, through the liver.
+                        It's a rare but aggressive form of cancer.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Bipolar Disorder</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A disorder associated with episodes of mood swings ranging from depressive lows to manic highs.
+                        The exact cause of bipolar disorder isn’t known, but a combination of genetics, environment and
+                        altered brain structure and chemistry may play a role.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="disease(cancerC,G,H,I,K,L,N,O).html" style="text-decoration: none;">
+                        <h2 class="disease-headings">Bladder Cancer</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Cancer that begins in the bladder.
+                        This cancer typically affects older adults. It's usually diagnosed early, when it's still
+                        treatable. It's likely to recur, so follow-up tests are typically recommended.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="disease(cancerC,G,H,I,K,L,N,O).html" style="text-decoration: none;">
+                        <h2 class="disease-headings">Bone Cancer</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A mass of unusual cells growing in a bone. Most bone tumours aren't cancerous.
+                        Causes of bone tumours include abnormal healing of an injury, inherited conditions and radiation
+                        therapy.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Bowel Birth Defect</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Gastroschisis is a birth defect of the abdominal (belly) wall. The baby's intestines are found
+                        outside of the baby's body, exiting through a hole beside the belly button.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Brain Tumor</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A cancerous or non-cancerous mass or growth of abnormal cells in the brain.
+                        Tumours can start in the brain, or cancer elsewhere in the body can spread to the brain.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Breastfeeding</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Breastfeeding is when you feed your baby breast milk, usually directly from your breast. It’s
+                        also called nursing. Making the decision to breastfeed is a personal matter. It's also one
+                        that's likely to draw opinions from friends and family.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="disease(cancerC,G,H,I,K,L,N,O).html" style="text-decoration: none;">
+                        <h2 class="disease-headings">Breast Cancer</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A cancer that forms in the cells of the breasts.
+                        Breast cancer can occur in women and rarely in men.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Bursitis</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Inflammation of the fluid-filled pads (bursae) that act as cushions at the joints.
+                        Bursitis occurs most often at joints that perform frequent repetitive motion.
+                    </p>
+                </div>
+            </div>
+
+            <div class="container mt-5" id="c">
+                <h1 style="font-family: 'Mate SC', serif;" class="ps-2">C</h1>
+                <hr>
+                <div class="container mb-4">
+                    <a href="disease(cancerC,G,H,I,K,L,N,O).html" style="text-decoration: none;">
+                        <h2 class="disease-headings">Cancer Chemotherapy</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Chemotherapy is the use of drugs to destroy cancer cells. It usually works by keeping the cancer
+                        cells from growing, dividing, and making more cells. Because cancer cells usually grow and
+                        divide faster than normal cells, chemotherapy has more of an effect on cancer cells.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Celiac Disease</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        An immune reaction to eating gluten, a protein found in wheat, barley and rye.
+                        Over time, the immune reaction to eating gluten creates inflammation that damages the small
+                        intestine's lining, leading to medical complications. It also prevents absorption of some
+                        nutrients (malabsorption).
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="disease(cancerC,G,H,I,K,L,N,O).html" style="text-decoration: none;">
+                        <h2 class="disease-headings">Cervical Cancer</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A malignant tumour of the cervix, the lowermost part of the uterus.
+                        A malignant tumour of the lower-most part of the uterus (womb) that can be prevented by PAP
+                        smear screening and a HPV vaccine.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Cirrhosis</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Cirrhosis is a late stage of scarring (fibrosis) of the liver caused by many forms of liver
+                        diseases and conditions, such as hepatitis and chronic alcoholism. Each time your liver is
+                        injured — whether by disease, excessive alcohol consumption or another cause — it tries to
+                        repair itself.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="disease(cancerC,G,H,I,K,L,N,O).html" style="text-decoration: none;">
+                        <h2 class="disease-headings">Colorectal Cancer</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Colorectal cancer, also known as bowel cancer, colon cancer, or rectal cancer, is any cancer
+                        that affects the colon and rectum. The American Cancer Society (ACS) expects to see around
+                        104,270 new cases of colon cancer and 45,230 new cases of rectal cancer in the United States in
+                        2021.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Constipation</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        When a person passes less than three bowel movements a week or has difficult bowel movements.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Chronic Obstructive Pulmonary Disease (COPD)</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A group of lung diseases that block airflow and make it difficult to breathe.
+                        Emphysema and chronic bronchitis are the most common conditions that make up COPD. Damage to the
+                        lungs from COPD can't be reversed.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Corns and Calluses</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Thickened layers of skin, often on the hands or feet, where friction repeatedly occurs.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Crohn’s Disease</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Crohn's disease is a type of inflammatory bowel disease (IBD). It causes inflammation of your
+                        digestive tract, which can lead to abdominal pain, severe diarrhea, fatigue, weight loss and
+                        malnutrition. Inflammation caused by Crohn's disease can involve different areas of the
+                        digestive tract in different people.
+                    </p>
+                </div>
+            </div>
+
+            <div class="container mt-5" id="d">
+                <h1 style="font-family: 'Mate SC', serif;" class="ps-2">D</h1>
+                <hr>
+                <div class="container mb-4">
+                    <a href="disease(D).html" style="text-decoration: none;">
+                        <h2 class="disease-headings">Delirium</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Serious disturbance in mental abilities that results in confused thinking and reduced awareness
+                        of surroundings.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Depression</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Depression is classified as a mood disorder. It may be described as feelings of sadness, loss,
+                        or anger that interfere with a person’s everyday activities.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Diabetes</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high.
+                        Blood glucose is your main source of energy and comes from the food you eat. Insulin, a hormone
+                        made by the pancreas, helps glucose from food get into your cells to be used for energy.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Dialysis</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        In medicine, dialysis is the process of removing excess water, solutes, and toxins from the
+                        blood in people whose kidneys can no longer perform these functions naturally. This is referred
+                        to as renal replacement therapy.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Diarrhea</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Loose, watery stools that occur more frequently than usual.
+                        Diarrhoea is usually caused by a virus, or sometimes, contaminated food. Less frequently, it can
+                        be a sign of another disorder, such as inflammatory bowel disease or irritable bowel syndrome.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Disruptive Mood Dysregulation Disorder</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        When a person passes less than three bowel movements a week or has difficult bowel movements.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Down's Syndrome</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A genetic chromosome 21 disorder causing developmental and intellectual delays.
+                        Down's syndrome is a genetic disorder caused when abnormal cell division results in extra
+                        genetic material from chromosome 21.
+                    </p>
+                </div>
+            </div>
+
+            <div class="container mt-5" id="e">
+                <h1 style="font-family: 'Mate SC', serif;" class="ps-2">E</h1>
+                <hr>
+                <div class="container mb-4">
+                    <a href="disease(E).html" style="text-decoration: none;">
+                        <h2 class="disease-headings">Eczema</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        An itchy inflammation of the skin.
+                        Atopic dermatitis usually develops in early childhood and is more common in people who have a
+                        family history of the condition.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Edema</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Edema is swelling caused by excess fluid trapped in your body's tissues. Although edema can
+                        affect any part of your body, you may notice it more in your hands, arms, feet, ankles and legs.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Erectile Dysfunction</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Occurs when a man can't get or keep an erection firm enough for sexual intercourse.
+                        Erectile dysfunction can be a sign of a physical or psychological condition. It can cause
+                        stress, relationship strain and low self-confidence.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="disease(cancerC,G,H,I,K,L,N,O).html" style="text-decoration: none;">
+                        <h2 class="disease-headings">Esophageal Cancer</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Cancer of the tube that runs from the throat to the stomach (oesophagus).
+                        Smoking and poorly controlled acid reflux are significant risk factors for oesophageal cancer.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="disease(cancerC,G,H,I,K,L,N,O).html" style="text-decoration: none;">
+                        <h2 class="disease-headings">Eye Cancer</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        If the cancer starts inside the eyeball it's called intraocular cancer. The most common
+                        intraocular cancers in adults are melanoma and lymphoma. The most common eye cancer in children
+                        is retinoblastoma, which starts in the cells of the retina. Cancer can also spread to the eye
+                        from other parts of the body.
+                    </p>
+                </div>
+            </div>
+
+            <div class="container mt-5" id="f">
+                <h1 style="font-family: 'Mate SC', serif;" class="ps-2">F</h1>
+                <hr>
+                <div class="container mt-3 mb-4">
+                    <a href="disease(Fl).html" style="text-decoration: none;">
+                        <h2 class="disease-headings">Fetal Alcohol Spectrum Disorders</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Fetal alcohol spectrum disorders are a group of conditions that can occur in a person whose
+                        mother drank alcohol during pregnancy.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Fibromyalgia</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Widespread muscle pain and tenderness.
+                        Fibromyalgia is often accompanied by fatigue and altered sleep, memory and mood.
+                        Widespread muscle pain and tenderness are the most common symptoms.
+                    </p>
+                </div>
+            </div>
+
+            <div class="container mt-5" id="g">
+                <h1 style="font-family: 'Mate SC', serif;" class="ps-2">G</h1>
+                <hr>
+                <div class="container mb-4">
+                    <a href="disease(cancerC,G,H,I,K,L,N,O).html" style="text-decoration: none;">
+                        <h2 class="disease-headings">Gallbladder Cancer</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Cancer that develops in the gallbladder, a small organ below the liver.
+                        The gallbladder's size and location make it easier for the cancer to grow undetected.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Gangrene</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Dead tissue caused by an infection or lack of blood flow.
+                        The death of tissue often occurs in the extremities or skin from loss of blood supply. The
+                        condition often affects toes, fingers and limbs, but can affect muscles and organs.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Giant Cell Arteritis</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Giant cell arteritis is an inflammation of the lining of your arteries. Most often, it affects
+                        the arteries in your head, especially those in your temples. For this reason, giant cell
+                        arteritis is sometimes called temporal arteritis.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Glaucoma</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A group of eye conditions that can cause blindness.
+                        With all types of glaucoma, the nerve connecting the eye to the brain is damaged, usually due to
+                        high eye pressure.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Gum Disease</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A serious gum infection that damages gums and can destroy the jawbone.
+                        Periodontitis is common but fairly preventable. The cause is usually poor oral hygiene.
+                        Periodontitis can lead to tooth loss. It's a risk factor for heart and lung diseases.
+                    </p>
+                </div>
+            </div>
+
+            <div class="container mt-5" id="h">
+                <h1 style="font-family: 'Mate SC', serif;" class="ps-2">H</h1>
+                <hr>
+                <div class="container mb-4">
+                    <a href="disease(cancerC,G,H,I,K,L,N,O).html" style="text-decoration: none;">
+                        <h2 class="disease-headings">Head and Neck Cancer</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A group of cancers of the mouth, sinuses, nose or throat.
+                        Smoking is a significant risk factor.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Heart attack</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A blockage of blood flow to the heart muscle.
+                        A heart attack is a medical emergency. A heart attack usually occurs when a blood clot blocks
+                        blood flow to the heart. Without blood, tissue loses oxygen and dies.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Hepatitis A</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A highly contagious liver infection caused by the hepatitis A virus.
+                        Hepatitis A is preventable by vaccine. It spreads from contaminated food or water or contact
+                        with someone who is infected.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Hepatitis B</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A serious liver infection caused by the hepatitis B virus that's easily preventable by a
+                        vaccine. This disease is most commonly spread by exposure to infected bodily fluids.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Hepatitis C</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        An infection caused by a virus that attacks the liver and leads to inflammation.
+                        The virus is spread by contact with contaminated blood; for example, from sharing needles or
+                        from unsterile tattoo equipment.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">High Blood Pressure</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A condition in which the force of the blood against the artery walls is too high.
+                        Usually hypertension is defined as blood pressure above 140/90, and is considered severe if the
+                        pressure is above 180/120.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Hormone Therapy</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Hormone therapy or hormonal therapy is the use of hormones in medical treatment. Treatment with
+                        hormone antagonists may also be referred to as hormonal therapy or antihormone therapy.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Hypothermia</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A significant and potentially dangerous drop in body temperature. The most common cause is
+                        prolonged exposure to cold.
+                    </p>
+                </div>
+            </div>
+
+            <div class="container mt-5" id="i">
+                <h1 style="font-family: 'Mate SC', serif;" class="ps-2">I</h1>
+                <hr>
+                <div class="container mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Immunotherapy</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Immunotherapy or biological therapy is the treatment of disease by activating or suppressing the
+                        immune system. Immunotherapies designed to elicit or amplify an immune response are classified
+                        as activation immunotherapies, while immunotherapies that reduce or suppress are classified as
+                        suppression immunotherapies.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Infectious Arthritis</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Infectious arthritis, also called septic arthritis, is a painful infection in the joint. It can
+                        occur when an infection from another part of your body spreads to a joint or the fluid
+                        surrounding the joint. Infection-causing germs may also enter the body during surgery, or
+                        through open wounds or an injection.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Infertility</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Not getting pregnant, despite having carefully timed, unprotected sex for one year.
+                        The cause of infertility may be difficult to determine but may include inadequate levels of
+                        certain hormones in both men and women, and trouble with ovulation in women.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="disease(cancerC,G,H,I,K,L,N,O).html" style="text-decoration: none;">
+                        <h2 class="disease-headings">Intestinal Cancer</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Intestinal cancer is rare, but eating a high-fat diet or having Crohn's disease, celiac disease,
+                        or a history of colonic polyps can increase your risk.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Intestinal Obstruction</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A gastrointestinal condition in which digested material is prevented from passing normally
+                        through the bowel. It can be caused by fibrous tissue that compresses the gut, which can develop
+                        many years after
+                        abdominal surgery. It can also be caused by certain medication.
+                    </p>
+                </div>
+            </div>
+
+            <div class="container mt-5" id="j">
+                <h1 style="font-family: 'Mate SC', serif;" class="ps-2">J</h1>
+                <hr>
+                <div class="container mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Juvenile Arthritis</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Juvenile arthritis is a disease in which there is inflammation (swelling) of the synovium in
+                        children aged 16 or younger. The synovium is the tissue that lines the inside of joints.
+                        Juvenile arthritis is an autoimmune disease.
+                    </p>
+                </div>
+            </div>
+
+            <div class="container mt-5" id="k">
+                <h1 style="font-family: 'Mate SC', serif;" class="ps-2">K</h1>
+                <hr>
+                <div class="container mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Kaposi Sarcoma</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Kaposi's sarcoma is a type of cancer that forms in the lining of blood and lymph vessels. The
+                        tumors (lesions) of Kaposi's sarcoma typically appear as painless purplish spots on the legs,
+                        feet or face. Lesions can also appear in the genital area, mouth or lymph nodes.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="disease(cancerC,G,H,I,K,L,N,O).html" style="text-decoration: none;">
+                        <h2 class="disease-headings">Kidney Cancer</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Kidney cancer is cancer that begins in the kidneys. Your kidneys are two bean-shaped organs,
+                        each about the size of your fist. They're located behind your abdominal organs, with one kidney
+                        on each side of your spine.
+                    </p>
+                </div>
+            </div>
+
+            <div class="container mt-5" id="l">
+                <h1 style="font-family: 'Mate SC', serif;" class="ps-2">L</h1>
+                <hr>
+                <div class="container mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Lactose Intolerance</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        The inability to fully digest sugar (lactose) in dairy products.
+                        Lactose intolerance is usually caused by a deficiency of an enzyme in the body called lactase.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Leukemia</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A cancer of blood-forming tissues, hindering the body's ability to fight infection.
+                        Leukaemia is cancer of blood-forming tissues, including bone marrow. Many types exist such as
+                        acute lymphoblastic leukaemia, acute myeloid leukaemia and chronic lymphocytic leukaemia.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Liver Cancer</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A cancer that begins in the lungs and most often occurs in people who smoke.
+                        Two major types of lung cancer are non-small cell lung cancer and small cell lung cancer. Causes
+                        of lung cancer include smoking, second-hand smoke, exposure to certain toxins and family
+                        history.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Lung Cancer</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Intestinal cancer is rare, but eating a high-fat diet or having Crohn's disease, celiac disease,
+                        or a history of colonic polyps can increase your risk.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Lupus</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        An inflammatory disease caused when the immune system attacks its own tissues.
+                        Lupus (SLE) can affect the joints, skin, kidneys, blood cells, brain, heart and lungs.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Lymphedema</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Swelling in an arm or leg caused by a lymphatic system blockage.
+                        The condition is caused by a blockage in the lymphatic system, part of the immune and
+                        circulatory systems. Lymphoedema is most commonly caused by lymph node removal or damage due to
+                        cancer treatment.
+                    </p>
+                </div>
+            </div>
+
+            <div class="container mt-5" id="m">
+                <h1 style="font-family: 'Mate SC', serif;" class="ps-2">M</h1>
+                <hr>
+                <div class="container mb-4">
+                    <a href="disease(M).html" style="text-decoration: none;">
+                        <h2 class="disease-headings">Marfan Syndrome</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Marfan syndrome is an inherited disorder that affects connective tissue — the fibers that
+                        support and anchor your organs and other structures in your body.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Marijuana</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Cannabis, also known as marijuana among other names, is a psychoactive drug from the Cannabis
+                        plant used primarily for medical and recreational purposes.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Melanoma</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        The most serious type of skin cancer.
+                        Melanoma occurs when the pigment-producing cells that give colour to the skin become cancerous.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Menstruation</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Menstruation, or period, is normal vaginal bleeding that occurs as part of a woman's monthly
+                        cycle. Every month, your body prepares for pregnancy. If no pregnancy occurs, the uterus, or
+                        womb, sheds its lining. The menstrual blood is partly blood and partly tissue from inside the
+                        uterus.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Mesothelioma</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A tumour of the tissue that lines the lungs, stomach, heart and other organs.
+                        Cancerous (malignant) mesothelioma is the most common form, usually affecting the lungs.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Methamphetamine</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Methamphetamine is a potent central nervous system stimulant that is mainly used as a
+                        recreational drug and less commonly as a second-line treatment for attention deficit
+                        hyperactivity disorder and obesity.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Multiple Myeloma</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A cancer of plasma cells.
+                        The plasma cells are a type of white blood cell in the bone marrow. With this condition, a group
+                        of plasma cells becomes cancerous and multiplies. The disease can damage the bones, immune
+                        system, kidneys and red blood cell count.
+                    </p>
+                </div>
+            </div>
+
+            <div class="container mt-5" id="n">
+                <h1 style="font-family: 'Mate SC', serif;" class="ps-2">N</h1>
+                <hr>
+                <div class="container mb-4">
+                    <a href="disease(cancerC,G,H,I,K,L,N,O).html" style="text-decoration: none;">
+                        <h2 class="disease-headings">Nasal Cancer</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        In most cases, nasal cavity and paranasal sinus cancers are found because of problems they
+                        cause. Finding these cancers in people without symptoms is rare and usually accidental (while
+                        doing tests to check for other medical problems).
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Nausea and Vomiting</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Nausea and vomiting are not diseases, but rather are symptoms of many different conditions, such
+                        as infection ("stomach flu"), food poisoning, motion sickness, overeating, blocked intestine,
+                        illness, concussion or brain injury, appendicitis and migraines.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Neuroblastoma</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A cancer that is commonly found in the adrenal glands.
+                        Neuroblastoma is a cancer often found in the small glands on top of the kidneys (adrenal
+                        glands). It can develop in the stomach, chest, neck, pelvis and bones. Children aged five or
+                        younger are most commonly affected.
+                    </p>
+                </div>
+            </div>
+
+            <div class="container mt-5" id="o">
+                <h1 style="font-family: 'Mate SC', serif;" class="ps-2">O</h1>
+                <hr>
+                <div class="container mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Obesity</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A disorder involving excessive body fat that increases the risk of health problems.
+                        Obesity often results from taking in more calories than are burned by exercise and normal daily
+                        activities.
+                        Obesity occurs when a person's body mass index is 25 or greater. The excessive body fat
+                        increases the risk of serious health problems.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Obsessive-Compulsive Disorder</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Excessive thoughts (obsessions) that lead to repetitive behaviours (compulsions).
+                        Obsessive-compulsive disorder is characterised by unreasonable thoughts and fears (obsessions)
+                        that lead to compulsive behaviours.
+                        OCD often centres on themes such as a fear of germs or the need to arrange objects in a specific
+                        manner.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="disease(cancerC,G,H,I,K,L,N,O).html" style="text-decoration: none;">
+                        <h2 class="disease-headings">Oral Cancer</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        Cancer that develops in any part of the mouth.
+                        Risk factors include tobacco use, heavy alcohol use and human papillomavirus (HPV) infection.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Osteoarthritis</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A type of arthritis that occurs when flexible tissue at the ends of bones wears down.
+                        The wearing down of the protective tissue at the ends of bones (cartilage) occurs gradually and
+                        worsens over time.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Osteogenesis Imperfecta</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A group of inherited disorders characterised by fragile bones that break easily.
+                        Osteogenesis imperfecta is caused by defective genes. These genes affect how the body makes
+                        collagen, a protein that helps strengthen bones.
+                        The condition can be mild, with only a few fractures during a person's lifetime. In more severe
+                        cases, it can involve hundreds of fractures that occur without any apparent cause.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Osteonecrosis</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        The death of bone tissue due to a lack of blood supply.
+                        Avascular necrosis is associated with long-term steroid use and drinking too much alcohol. It's
+                        most common in people between the ages of 30 and 60 and often affects the hip.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Osteoporosis</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A condition in which bones become weak and brittle.
+                        The body constantly absorbs and replaces bone tissue. With osteoporosis, new bone creation
+                        doesn't keep up with old bone removal.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="disease(cancerC,G,H,I,K,L,N,O).html" style="text-decoration: none;">
+                        <h2 class="disease-headings">Ovarian Cancer</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A cancer that begins in the female organs that produce eggs (ovaries).
+                        Ovarian cancer often goes undetected until it has spread within the pelvis and stomach. At this
+                        late stage, ovarian cancer is more difficult to treat and can be fatal.
+                    </p>
+                </div>
+
+                <div class="container mt-3 mb-4">
+                    <a href="" style="text-decoration: none;">
+                        <h2 class="disease-headings">Overactive Bladder</h2>
+                    </a>
+                    <p class="ps-5 pt-2 text-muted disease-description" style="font-size: larger;">
+                        A problem with bladder function that causes the sudden need to urinate.
+                        Overactive bladder happens mostly in women but may occur in men. Ageing, an enlarged prostate
+                        and diabetes are all risk factors.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- matter ends -->
+
+
+    <!-- Footer starts -->
+    <div class="container-fluid bg-dark text-light">
+        <div class="container-fluid ms-2 me-2">
+            <div class="row">
+                <div class="col-12 col-lg-3">
+                    <h4 class="pt-5 pb-3 text-center">Health Care</h4>
+
+                    <p style="font-family: 'Dancing Script', cursive; font-size: 20px;" class="mb-4 text-center">
+                        <b>"</b>In the happiness of others, lies our own.<b>"</b>
+                    </p>
+
+                    <hr>
+
+                    <div style="border-radius: 10px; background-color: #4c374e;" class="mt-4 mb-4 me-2 p-4">
+                        <input class="form-control mb-4" type="text" placeholder="Name"
+                            aria-label="default input example">
+                        <div class="input-group mb-4">
+                            <input type="text" class="form-control" placeholder="Example" aria-label="Username">
+                            <span class="input-group-text" style="border: 0;">@</span>
+                            <input type="text" class="form-control" placeholder="Email.com" aria-label="Server">
+                        </div>
+                        <input class="form-control mb-4" type="text" placeholder="Purpose"
+                            aria-label="default input example">
+                        <div class="input-group mb-4">
+                            <div class="input-group-text" style="border: 0;">
+                                Message</div>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                            <label class="form-check-label" for="autoSizingCheck2">
+                                Notify me
+                            </label>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn btn-light">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h4 class="pt-5 pb-3 text-center">View Doctors by Departments</h4>
+                    <ul style="list-style: none outside;" class="m-0 p-0 pt-2">
+                        <a href="cardiology-doctors.html" style="text-decoration: none;">
+                            <li style="font-size: 18px; color: #e1e1e1;" class="mb-4 ms-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16" style="margin-right: 5%;">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                                Cardiology
+                            </li>
+                        </a>
+                        <a href="cancer-care.html" style="text-decoration: none;">
+                            <li style="font-size: 18px; color: #e1e1e1;" class="mb-4 ms-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16" style="margin-right: 5%;">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                                Cancer Care
+                            </li>
+                        </a>
+                        <a href="critical-care.html" style="text-decoration: none;">
+                            <li style="font-size: 18px; color: #e1e1e1;" class="mb-4 ms-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16" style="margin-right: 5%;">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                                Critical Care
+                            </li>
+                        </a>
+                        <a href="bariatric-surgery.html" style="text-decoration: none;">
+                            <li style="font-size: 18px; color: #e1e1e1;" class="mb-4 ms-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16" style="margin-right: 5%;">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                                Bariatric Surgery
+                            </li>
+                        </a>
+                        <a href="gastre.html" style="text-decoration: none;">
+                            <li style="font-size: 18px; color: #e1e1e1;" class="mb-4 ms-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16" style="margin-right: 5%;">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                                Gastroenterology
+                            </li>
+                        </a>
+                        <a href="neurology.html" style="text-decoration: none;">
+                            <li style="font-size: 18px; color: #e1e1e1;" class="mb-4 ms-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16" style="margin-right: 5%;">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                                Neurology
+                            </li>
+                        </a>
+                        <a href="robotic.html" style="text-decoration: none;">
+                            <li style="font-size: 18px; color: #e1e1e1;" class="mb-4 ms-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16" style="margin-right: 5%;">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                                Robotic Surgery
+                            </li>
+                        </a>
+                        <a href="orthopedic.html" style="text-decoration: none;">
+                            <li style="font-size: 18px; color: #e1e1e1;" class="mb-4 ms-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16" style="margin-right: 5%;">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                                Orthopedics
+                            </li>
+                        </a>
+                        <a href="transplant.html" style="text-decoration: none;">
+                            <li style="font-size: 18px; color: #e1e1e1;" class="mb-4 ms-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16" style="margin-right: 5%;">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                                Organ Transplantion
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h4 class="pt-5 pb-3 text-center">Useful Links</h4>
+                    <ul style="list-style: none outside;" class="m-0 p-0 pt-2">
+                        <a href="emergency.html" style="text-decoration: none;">
+                            <li style="font-size: 18px; color: #e1e1e1;" class="mb-4 ms-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16" style="margin-right: 5%;">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                                Emergency Hospitals
+                            </li>
+                        </a>
+                        <a href="doctors.html" style="text-decoration: none;">
+                            <li style="font-size: 18px; color: #e1e1e1;" class="mb-4 ms-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16" style="margin-right: 5%;">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                                Doctors Appointment
+                            </li>
+                        </a>
+                        <a href="tests.html" style="text-decoration: none;">
+                            <li style="font-size: 18px; color: #e1e1e1;" class="mb-4 ms-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16" style="margin-right: 5%;">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                                Book Your Tests
+                            </li>
+                        </a>
+                        <a href="" style="text-decoration: none;">
+                            <li style="font-size: 18px; color: #e1e1e1;" class="mb-4 ms-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16" style="margin-right: 5%;">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                                Useful Contacts
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h4 class="pt-5 pb-4 text-center">Have a Question?</h4>
+                    <h5>Contact us on:</h5>
+                    <div class="mt-4 mb-5 text-light">
+                        <a href="#" style="text-decoration: none;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white"
+                                class="bi bi-linkedin me-4 ms-4" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                            </svg>
+                        </a>
+                        <a href="#" style="text-decoration: none;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white"
+                                class="bi bi-instagram me-4 ms-4" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                            </svg>
+                        </a>
+                        <a href="#" style="text-decoration: none;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white"
+                                class="bi bi-twitter me-4 ms-4" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                            </svg>
+                        </a>
+                        <a href="#" style="text-decoration: none;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white"
+                                class="bi bi-github me-4 ms-4" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                            </svg>
+                        </a>
+                        <a href="#" style="text-decoration: none;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white"
+                                class="bi bi-facebook me-4 ms-4" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                            </svg>
+                        </a>
+                    </div><br>
+                    <span style="font-size: 20px;">
+                        <b>Phone:</b> +91-8074****74
+                    </span><br><br><br>
+                    <span style="font-size: 20px;">
+                        <b>Mail:</b> <a style="color: blueviolet;"
+                            href="mailto:aksashank2002@gmail.com">aksashank2002@gmail.com</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer ends -->
+
+
+    <!-- Script tags -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+
+    <!-- Script tags -->
+</body>
+
+</html>

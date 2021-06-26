@@ -1,0 +1,1211 @@
+<html>
+
+<head>
+    <title>Medical Emergency</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="icon" href="health-logo.png" type="image/x-icon">
+    <style>
+        body {
+            background-color: #e2e2e2;
+        }
+
+        .navbar-brand {
+            color: #2d5a6b;
+        }
+
+        .nav-link {
+            color: #222222;
+            font-weight: 900;
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14.5px;
+            font-weight: 600;
+        }
+
+        .nav-link:hover {
+            color: #e1e1e1;
+            background-color: #802bcf;
+        }
+
+        .navbar-active {
+            color: #e1e1e1;
+            background-color: #802bcf;
+        }
+
+        .nav-item {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .emergency-card-heading {
+            font-weight: 700;
+            font-size: 22px;
+        }
+
+        .emergency-card {
+            background: linear-gradient(153deg, #d7dfff 12%, #c7a2fc 96%);
+            border-radius: 15px;
+        }
+
+        .accordion-button {
+            background: #e7c2ff;
+        }
+
+        @media only screen and (max-width: 991.9px) {
+            .middle-cards {
+                margin-top: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar starts -->
+    <nav class="navbar navbar-expand-xl bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-4 mt-1" href="home.html"
+                style="font-family: 'Lora', serif; font-weight: 600; font-size: 30px;">
+                <img src="health-logo-removebg-preview.png" height="50px" style="margin-right: 10px;">
+                Health Care
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-active" href="#">emergency</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="generalDiseases.html">General Health</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="one-page-booking.html">booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="usefulContacts.html">useful contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="user-profile.html" class="nav-link" style="padding: 0 !important; border-radius: 50%;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar ends -->
+
+
+    <!-- matter starts -->
+    <div class="container-fluid p-4 ">
+        <div class="container pt-0 pb-0 text-dark">
+            <h1 class="text-center mt-4">Medical Emergency</h1>
+            <h5 class="text-center">───────</h1>
+                <p style="font-size: larger;" class="text-center">
+                    The goal of emergency medical services is to either provide treatment to those in need of urgent
+                    medical care, with the goal of satisfactorily treating the malady, or arranging for timely removal
+                    of the patient to the next point of definitive care. This is most likely a Casualty at a hospital or
+                    another place where physicians are available. The term Emergency Medical Service (EMS)
+                    evolved to reflect a change from a simple transportation system (ambulance service) to a
+                    system in which actual medical care occurred in addition to transportation. In some developing
+                    regions, the term is not used, or may be used inaccurately, since the service in question does
+                    not provide treatment to the patients, but only the provision of transport to the point of care.
+                </p>
+        </div>
+    </div>
+
+    <div class="container-fluid pt-5 pb-5" style="background: linear-gradient(169deg, #7d6afd 0%, #6108e6 100%);">
+        <div class="container">
+            <h2 class="text-center text-light">Emergency Hospitals & Oxygen Availability</h2>
+            <h5 class="text-center text-light">───────</h5>
+            <br>
+            <h3 class="text-light text-center pb-4">Andhra Pradesh</h3>
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item mt-2 bg-transparent" style="border: 0;">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed btn-light w-100" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                            aria-controls="flush-collapseOne">
+                            <b>Visakhapatnam</b>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOnee"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="container-fluid p-5" style="background: transparent">
+                            <div class="container">
+                                <h3 class="text-light pb-4">Oxygen Availability</h3>
+                                <div class="row">
+                                    <div class="col-12 col-lg-4">
+                                        <center>
+                                            <div class="card p-5 emergency-card">
+                                                <h5 class="emergency-card-heading"> Shree Mahavir Nagar yuvak Mandal,
+                                                    Kandivalli West </h5>
+                                                <br>
+                                                <span class="mb-3" style="font-size: 16px; font-weight: 600;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-geo-alt-fill me-2"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                                    </svg>
+                                                    Visakhapatnam │ Andhra Pradesh.
+                                                </span>
+                                                <span class="mb-3" style="font-size: 16px; font-weight: 600;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-telephone-fill me-2"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                                    </svg>
+                                                    86522831119821320000
+                                                </span>
+                                                <span style="font-size: 16px;"><b>Status: </b> Pending</span>
+                                            </div>
+                                        </center>
+                                    </div>
+
+                                    <div class="col-12 col-lg-4">
+                                        <center>
+                                            <div class="card p-5 middle-cards emergency-card">
+                                                <h5 class="emergency-card-heading">Kaveri Gas Products</h5>
+                                                <br>
+                                                <span class="mb-3" style="font-size: 16px; font-weight: 600;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-geo-alt-fill me-2"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                                    </svg>
+                                                    Visakhapatnam │ Andhra Pradesh.
+                                                </span>
+                                                <span class="mb-3" style="font-size: 16px; font-weight: 600;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-telephone-fill me-2"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                                    </svg>
+                                                    +91-8456541488
+                                                </span>
+                                                <span style="font-size: 16px;"><b>Status: </b> Pending</span>
+                                            </div>
+                                        </center>
+                                    </div>
+
+                                    <div class="col-12 col-lg-4">
+                                        <center>
+                                            <div class="card p-5 middle-cards emergency-card">
+                                                <h5 class="emergency-card-heading">Shantinath Air Products</h5>
+                                                <br>
+                                                <span class="mb-3" style="font-size: 16px; font-weight: 600;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-geo-alt-fill me-2"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                                    </svg>
+                                                    Visakhapatnam │ Andhra Pradesh.
+                                                </span>
+                                                <span class="mb-3" style="font-size: 16px; font-weight: 600;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-telephone-fill me-2"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                                    </svg>
+                                                    +91-9007744666
+                                                </span>
+                                                <span style="font-size: 16px;"><b>Status: </b> Pending</span>
+                                            </div>
+                                        </center>
+                                    </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-12 col-lg-4">
+                                        <center>
+                                            <div class="card p-5 emergency-card">
+                                                <h5 class="emergency-card-heading">Venkateswara</h5>
+                                                <br>
+                                                <span class="mb-3" style="font-size: 16px; font-weight: 600;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-geo-alt-fill me-2"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                                    </svg>
+                                                    Visakhapatnam │ Andhra Pradesh.
+                                                </span>
+                                                <span class="mb-3" style="font-size: 16px; font-weight: 600;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-telephone-fill me-2"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                                    </svg>
+                                                    +91-9443023076
+                                                </span>
+                                                <span style="font-size: 16px;"><b>Status: </b> Pending</span>
+                                            </div>
+                                        </center>
+                                    </div>
+                                </div>
+                                <h3 class="text-light pt-5 pb-4">Emergency Hospitals</h3>
+                                <div class="row mt-4">
+                                    <div class="col-12 col-lg-4">
+                                        <center>
+                                            <div class="card p-5 emergency-card">
+                                                <h5 class="emergency-card-heading">Nri Anil Neerukonda Hospital</h5>
+                                                <br>
+                                                <span class="mb-3" style="font-size: 16px; font-weight: 600;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-geo-alt-fill me-2"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                                    </svg>
+                                                    Visakhapatnam │ Andhra Pradesh.
+                                                </span>
+                                                <span style="font-size: 16px;"><b>Status: </b> Unresponsive</span>
+                                            </div>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="accordion-item mt-2 bg-transparent" style="border: 0;">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed btn-light w-100" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                            aria-controls="flush-collapseTwo">
+                            <b>Krishna</b>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="container-fluid p-5" style="background: transparent">
+                            <div class="container">
+                                <h3 class="text-light pb-4">Oxygen Availability</h3>
+                                <div class="row">
+                                    <div class="col-12 col-lg-4">
+                                        <center>
+                                            <div class="card p-5 emergency-card">
+                                                <h5 class="emergency-card-heading">Ajit Jain</h5>
+                                                <br>
+                                                <span class="mb-3" style="font-size: 16px; font-weight: 600;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-geo-alt-fill me-2"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                                    </svg>
+                                                    Krishna │ Andhra Pradesh.
+                                                </span>
+                                                <span class="mb-3" style="font-size: 16px; font-weight: 600;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-telephone-fill me-2"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                                    </svg>
+                                                    +91-9424626318
+                                                </span>
+                                                <span style="font-size: 16px;"><b>Status: </b> Pending</span>
+                                            </div>
+                                        </center>
+                                    </div>
+                                </div>
+
+                                <h3 class="text-light pt-3 pb-4">Emergency Hospitals</h3>
+                                <div class="row mt-5">
+                                    <div class="col-12 col-lg-4">
+                                        <center>
+                                            <div class="card p-5 emergency-card">
+                                                <h5 class="emergency-card-heading">Nimra Institute Of Medical Sciences,
+                                                    Ibrahimpatnam,
+                                                    Vijayawada</h5>
+                                                <br>
+                                                <span class="mb-3" style="font-size: 16px; font-weight: 600;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-geo-alt-fill me-2"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                                    </svg>
+                                                    Krishna │ Andhra Pradesh.
+                                                </span>
+                                                <span style="font-size: 16px;"><b>Status: </b> Unresponsive</span>
+                                            </div>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="accordion-item mt-2 bg-transparent" style="border: 0;">
+                    <h2 class="accordion-header" id="flush-headingSeven">
+                        <button class="accordion-button collapsed btn-light w-100" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false"
+                            aria-controls="flush-collapseSeven">
+                            <b>Anantapur</b>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                        <div class="container-fluid p-5" style="background: transparent">
+                            <div class="container">
+                                <h3 class="text-light pb-4">Oxygen Availability</h3>
+                                <div class="row">
+                                    <div class="col-12 col-lg-4">
+                                        <center>
+                                            <div class="card p-5 emergency-card">
+                                                <h5 class="emergency-card-heading">Peenya Industrial Gases</h5>
+                                                <br>
+                                                <span class="mb-3" style="font-size: 16px; font-weight: 600;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-geo-alt-fill me-2"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                                    </svg>
+                                                    Anantapur │ Andhra Pradesh.
+                                                </span>
+                                                <span class="mb-3" style="font-size: 16px; font-weight: 600;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-telephone-fill me-2"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                                    </svg>
+                                                    +91-9900489790
+                                                </span>
+                                                <span style="font-size: 16px;"><b>Status: </b> Pending</span>
+                                            </div>
+                                        </center>
+                                    </div>
+                                </div>
+                                <h3 class="text-light pt-3 pb-4">Emergency Hospitals</h3>
+                                <div class="row mt-5">
+                                    <div class="col-12 col-lg-4">
+                                        <center>
+                                            <div class="card p-5 emergency-card">
+                                                <h5 class="emergency-card-heading">Nimra Institute Of Medical Sciences,
+                                                    Ibrahimpatnam,
+                                                    Vijayawada</h5>
+                                                <br>
+                                                <span class="mb-3" style="font-size: 16px; font-weight: 600;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-geo-alt-fill me-2"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                                    </svg>
+                                                    Krishna │ Andhra Pradesh.
+                                                </span>
+                                                <span style="font-size: 16px;"><b>Status: </b> Unresponsive</span>
+                                            </div>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="accordion-item mt-2 bg-transparent" style="border: 0;">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed btn-light w-100" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            <b>Chittoor</b>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="container-fluid p-5" style="background: transparent">
+                            <div class="container">
+                                <h3 class="text-light pb-4">Oxygen Availability</h3>
+                                <div class="row">
+                                    <div class="col-12 col-lg-4">
+                                        <center>
+                                            <div class="card p-5 emergency-card">
+                                                <h5 class="emergency-card-heading">Azam Kazi</h5>
+                                                <br>
+                                                <span class="mb-3" style="font-size: 16px; font-weight: 600;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-geo-alt-fill me-2"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                                    </svg>
+                                                    Chittoor │ Andhra Pradesh.
+                                                </span>
+                                                <span class="mb-3" style="font-size: 16px; font-weight: 600;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-telephone-fill me-2"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                                    </svg>
+                                                    +91-8097462237
+                                                </span>
+                                                <span style="font-size: 16px;"><b>Status: </b> Pending</span>
+                                            </div>
+                                        </center>
+                                    </div>
+                                </div>
+                                <h3 class="text-light pt-3 pb-4">Emergency Hospitals</h3>
+                                <div class="row mt-5">
+                                    <div class="col-12 col-lg-4">
+                                        <center>
+                                            <div class="card p-5 emergency-card">
+                                                <h5 class="emergency-card-heading">Nimra Institute Of Medical Sciences,
+                                                    Ibrahimpatnam,
+                                                    Vijayawada</h5>
+                                                <br>
+                                                <span class="mb-3" style="font-size: 16px; font-weight: 600;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-geo-alt-fill me-2"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                                    </svg>
+                                                    Krishna │ Andhra Pradesh.
+                                                </span>
+                                                <span style="font-size: 16px;"><b>Status: </b> Unresponsive</span>
+                                            </div>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="accordion-item mt-2 bg-transparent" style="border: 0;">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed btn-light w-100" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                            <b> Prakasam</b>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="container-fluid p-5" style="background: transparent">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-lg-4">
+                                        <center>
+                                            <div class="card p-5 emergency-card">
+                                                <h5 class="emergency-card-heading">Jamia Ghaisul Huda</h5>
+                                                <br>
+                                                <span class="mb-3" style="font-size: 16px; font-weight: 600;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-geo-alt-fill me-2"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                                    </svg>
+                                                    Prakasam │ Andhra Pradesh.
+                                                </span>
+                                                <span class="mb-3" style="font-size: 16px; font-weight: 600;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-telephone-fill me-2"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                                    </svg>
+                                                    +91- 9740272787
+                                                </span>
+                                                <span style="font-size: 16px;"><b>Status: </b> Pending</span>
+                                            </div>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="accordion-item mt-2 bg-transparent" style="border: 0;">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                        <button class="accordion-button collapsed btn-light w-100" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false"
+                            aria-controls="flush-collapseFive">
+                            <b>Kurnool</b>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="container-fluid p-5" style="background: transparent">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-lg-4">
+                                        <center>
+                                            <div class="card p-5 emergency-card">
+                                                <h5 class="emergency-card-heading">NA</h5>
+                                                <br>
+                                                <span class="mb-3" style="font-size: 16px; font-weight: 600;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-geo-alt-fill me-2"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                                    </svg>
+                                                    Kurnool │ Andhra Pradesh.
+                                                </span>
+                                                <span class="mb-3" style="font-size: 16px; font-weight: 600;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-telephone-fill me-2"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                                    </svg>
+                                                    +91-7780126219
+                                                </span>
+                                                <span style="font-size: 16px;"><b>Status: </b> Pending</span>
+                                            </div>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="accordion-item mt-2 bg-transparent" style="border: 0;">
+                    <h2 class="accordion-header" id="flush-headingSix">
+                        <button class="accordion-button collapsed btn-light w-100" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false"
+                            aria-controls="flush-collapseSix">
+                            <b>Nellore</b>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="container-fluid p-5" style="background: transparent">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-lg-4">
+                                        <center>
+                                            <div class="card p-5 emergency-card">
+                                                <h5 class="emergency-card-heading">Sanrai Med India Pvt Ltd.</h5>
+                                                <br>
+                                                <span class="mb-3" style="font-size: 16px; font-weight: 600;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-geo-alt-fill me-2"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                                    </svg>
+                                                    Nellore │ Andhra Pradesh.
+                                                </span>
+                                                <span class="mb-3" style="font-size: 16px; font-weight: 600;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-telephone-fill me-2"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                                    </svg>
+                                                    +91-9915752750
+                                                </span>
+                                                <span style="font-size: 16px;"><b>Status: </b> Pending</span>
+                                            </div>
+                                        </center>
+                                    </div>
+                                    <div class="col-12 col-lg-4 middle-cards">
+                                        <center>
+                                            <div class="card p-5 emergency-card">
+                                                <h5 class="emergency-card-heading">Entrusted</h5>
+                                                <br>
+                                                <span class="mb-3" style="font-size: 16px; font-weight: 600;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-geo-alt-fill me-2"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                                    </svg>
+                                                    Nellore │ Andhra Pradesh.
+                                                </span>
+                                                <span class="mb-3" style="font-size: 16px; font-weight: 600;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-telephone-fill me-2"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                                    </svg>
+                                                    +91-9790700000 & +91-7397449991
+                                                </span>
+                                                <span style="font-size: 16px;"><b>Status: </b> Pending</span>
+                                            </div>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <h1 class="text-center text-dark">COVID-19 Vaccination Hospitals</h2>
+                <h5 class="text-center text-dark">───────</h5>
+                <div class="card bg-dark" style="border: 0; border-radius: 0% !important;">
+                    <img src="https://virinchihospitals.com/wp-content/uploads/2021/02/shutterstock_1736967881.jpg"
+                        class="card-img" width="100%">
+                    <div class="card-img-overlay" style="background-color: #2222226c;">
+                        <center>
+                            <h2 class="text-light" style="font-family: 'Montserrat', sans-serif; font-weight: 600;">Take
+                                a look
+                                at all the Covid vaccination centers in you city</h2>
+                            <div class="accordion w-50 mt-4" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button p-2 type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne"
+                                            style="color: #1a187a; font-weight: 600; font-size: large;">
+                                            Pick Your District
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="list-group w-100" style="border: 0;">
+                                                <a href="anantapur.html" type="button"
+                                                    class="list-group-item list-group-item-action">
+                                                    Anantapur
+                                                </a>
+                                                <a href="chittor.html" type="button"
+                                                    class="list-group-item list-group-item-action">
+                                                    Chittoor
+                                                </a>
+                                                <a href="eastGodavari.html" type="button"
+                                                    class="list-group-item list-group-item-action">
+                                                    East Godavari
+                                                </a>
+                                                <a href="guntur.html" type="button"
+                                                    class="list-group-item list-group-item-action">
+                                                    Guntur
+                                                </a>
+                                                <a href="kadapa.html" type="button"
+                                                    class="list-group-item list-group-item-action">
+                                                    Kadapa
+                                                </a>
+                                                <a href="krishna.html" type="button"
+                                                    class="list-group-item list-group-item-action">
+                                                    Krishna
+                                                </a>
+                                                <a href="kurnool.html" type="button"
+                                                    class="list-group-item list-group-item-action">
+                                                    Kurnool
+                                                </a>
+                                                <a href="nellore.html" type="button"
+                                                    class="list-group-item list-group-item-action">
+                                                    Nellore
+                                                </a>
+                                                <a href="prakasam.html" type="button"
+                                                    class="list-group-item list-group-item-action">
+                                                    Prakasam
+                                                </a>
+                                                <a href="srikakulam.html" type="button"
+                                                    class="list-group-item list-group-item-action">
+                                                    Srikakulam
+                                                </a>
+                                                <a href="visakhapatnam.html" type="button"
+                                                    class="list-group-item list-group-item-action">
+                                                    Visakhapatnam
+                                                </a>
+                                                <a href="vizayanagaram.html" type="button"
+                                                    class="list-group-item list-group-item-action">
+                                                    Vizianagaram
+                                                </a>
+                                                <a href="westGodavari.html" type="button"
+                                                    class="list-group-item list-group-item-action">
+                                                    West Godavari
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-4">
+        <div class="container">
+            <h1 class="text-center mt-4">First Aid Tutorial</h1>
+            <h5 class="text-center">───────</h5>
+            <p class="text-center pb-4" style="font-size: larger;">First aid is an important tool in quickly responding
+                to
+                accidents to ensure that injuries can be efficiently and promptly dealt with before a trained medical
+                professional arrives to administer more specialised treatment.</p>
+            <iframe width="100%" height="90%" src="https://www.youtube.com/embed/mNk0mZRJBV0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="container-fluid p-3">
+        <div class="container">
+            <h2 class="text-center mt-4">Emergency Ambulance Numbers</h2>
+            <h5 class="text-center">───────</h5>
+            <div class="table-responsive-sm">
+                <table class="table text-light text-center mt-4" style="background-color: rgb(5, 146, 182);">
+                    <tbody style="font-size: 19px;">
+                        <tr style="background-color: rgb(3, 103, 128);">
+                            <th scope="col">District</th>
+                            <th scope="col">Phone Number</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                        <tr>
+                            <td class="pt-3 pb-3"><b>Visakhapatnam</b></td>
+                            <td class="pt-3 pb-3">+91-9849185987 <br>+91-9849595908</td>
+                            <td class="pt-3 pb-3">Unavailable but verified <br>Unresponsive</td>
+                        </tr>
+                        <tr>
+                            <td class="pt-3 pb-3"><b>Guntur</b></td>
+                            <td class="pt-3 pb-3">+91-9989011088 <br>+91-9849828896</td>
+                            <td class="pt-3 pb-3">Unresponsive <br>Unresponsive</td>
+                        </tr>
+                        <tr>
+                            <td class="pt-3 pb-3"><b>Prakasam</b></td>
+                            <td class="pt-3 pb-3">+91-9246472006</td>
+                            <td class="pt-3 pb-3">Unresponsive</td>
+                        </tr>
+                        <tr>
+                            <td class="pt-3 pb-3"><b>Krishna</b></td>
+                            <td class="pt-3 pb-3">+91-866-3202242</td>
+                            <td class="pt-3 pb-3">Unresponsive</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-4 pb-5" style="background: linear-gradient(169deg, #7d6afd 0%, #6108e6 100%);">
+        <div class="container">
+            <h2 class="text-center text-light">Available Doctors</h2>
+            <h5 class="text-center text-light">───────</h5>
+            <center>
+                <div class="row pb-2">
+                    <div class="col-lg-4">
+                        <div class="card mb-3 text-dark pt-3 pb-3 ps-2"
+                            style="border-radius: 13px; background: linear-gradient(153deg, #d7dfff 12%, #c7a2fc 96%); max-width: 100%; border: none;">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="https://ongreening-prod.s3.eu-west-2.amazonaws.com/utenti/35505/img_avatar.png"
+                                        class="rounded-circle" style="width: 100%;">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dr. Abhijit Vilas Kulkarni</h5>
+                                        <h5 class="card-text">You Pay: ₹1000</h5>
+                                        <a href="appointment-form.html" class="btn btn-secondary mt-3">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card mb-3 text-dark pt-3 pb-3 ps-2"
+                            style="border-radius: 13px; background: linear-gradient(153deg, #d7dfff 12%, #c7a2fc 96%); max-width: 100%; border: none;">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="https://ongreening-prod.s3.eu-west-2.amazonaws.com/utenti/35505/img_avatar.png"
+                                        class="rounded-circle" style="width: 100%;">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dr. Tripti Deb</h5>
+                                        <h5 class="card-text">You Pay: ₹500</h5>
+                                        <a href="appointment-form.html" class="btn btn-secondary mt-3">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card mb-3 text-dark pt-3 pb-3 ps-2"
+                            style="border-radius: 13px; background: linear-gradient(153deg, #d7dfff 12%, #c7a2fc 96%); max-width: 100%; border: none;">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="https://teachingandlearning.schulich.yorku.ca/wp-content/uploads/2019/10/avatar6.png"
+                                        class="rounded-circle" style="width: 100%;">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dr. Lakshmikanth P</h5>
+                                        <h5 class="card-text">You Pay: ₹1000</h5>
+                                        <a href="appointment-form.html" class="btn btn-secondary mt-3">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pb-2">
+                    <div class="col-lg-4">
+                        <div class="card mb-3 text-dark pt-3 pb-3 ps-2"
+                            style="border-radius: 13px; background: linear-gradient(153deg, #d7dfff 12%, #c7a2fc 96%); max-width: 100%; border: none;">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="https://ongreening-prod.s3.eu-west-2.amazonaws.com/utenti/35505/img_avatar.png"
+                                        class="rounded-circle" style="width: 100%;">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dr. Abhijit Vilas Kulkarni</h5>
+                                        <h5 class="card-text">You Pay: ₹1000</h5>
+                                        <a href="appointment-form.html" class="btn btn-secondary mt-3">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card mb-3 text-dark pt-3 pb-3 ps-2"
+                            style="border-radius: 13px; background: linear-gradient(153deg, #d7dfff 12%, #c7a2fc 96%); max-width: 100%; border: none;">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="https://ongreening-prod.s3.eu-west-2.amazonaws.com/utenti/35505/img_avatar.png"
+                                        class="rounded-circle" style="width: 100%;">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dr. Tripti Deb</h5>
+                                        <h5 class="card-text">You Pay: ₹500</h5>
+                                        <a href="appointment-form.html" class="btn btn-secondary mt-3">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card mb-3 text-dark pt-3 pb-3 ps-2"
+                            style="border-radius: 13px; background: linear-gradient(153deg, #d7dfff 12%, #c7a2fc 96%); max-width: 100%; border: none;">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="https://teachingandlearning.schulich.yorku.ca/wp-content/uploads/2019/10/avatar6.png"
+                                        class="rounded-circle" style="width: 100%;">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dr. Lakshmikanth P</h5>
+                                        <h5 class="card-text">You Pay: ₹1000</h5>
+                                        <a href="appointment-form.html" class="btn btn-secondary mt-3">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
+            <center>
+                <a href="doctors.html" class="btn btn-light w-75 mt-4" style="font-size: x-large;">View More</a>
+            </center>
+        </div>
+    </div>
+    <!-- matter ends -->
+
+
+    <!-- Footer starts -->
+    <div class="container-fluid bg-dark text-light">
+        <div class="container-fluid ms-2 me-2">
+            <div class="row">
+                <div class="col-12 col-lg-3">
+                    <h4 class="pt-5 pb-3 text-center">Health Care</h4>
+
+                    <p style="font-family: 'Dancing Script', cursive; font-size: 20px;" class="mb-4 text-center">
+                        <b>"</b>In the happiness of others, lies our own.<b>"</b>
+                    </p>
+
+                    <hr>
+
+                    <div style="border-radius: 10px; background-color: #4c374e;" class="mt-4 mb-4 me-2 p-4">
+                        <input class="form-control mb-4" type="text" placeholder="Name"
+                            aria-label="default input example">
+                        <div class="input-group mb-4">
+                            <input type="text" class="form-control" placeholder="Example" aria-label="Username">
+                            <span class="input-group-text" style="border: 0;">@</span>
+                            <input type="text" class="form-control" placeholder="Email.com" aria-label="Server">
+                        </div>
+                        <input class="form-control mb-4" type="text" placeholder="Purpose"
+                            aria-label="default input example">
+                        <div class="input-group mb-4">
+                            <div class="input-group-text" style="border: 0;">
+                                Message</div>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                            <label class="form-check-label" for="autoSizingCheck2">
+                                Notify me
+                            </label>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn btn-light">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h4 class="pt-5 pb-3 text-center">View Doctors by Departments</h4>
+                    <ul style="list-style: none outside;" class="m-0 p-0 pt-2">
+                        <a href="cardiology-doctors.html" style="text-decoration: none;">
+                            <li style="font-size: 18px; color: #e1e1e1;" class="mb-4 ms-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16" style="margin-right: 5%;">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                                Cardiology
+                            </li>
+                        </a>
+                        <a href="cancer-care.html" style="text-decoration: none;">
+                            <li style="font-size: 18px; color: #e1e1e1;" class="mb-4 ms-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16" style="margin-right: 5%;">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                                Cancer Care
+                            </li>
+                        </a>
+                        <a href="critical-care.html" style="text-decoration: none;">
+                            <li style="font-size: 18px; color: #e1e1e1;" class="mb-4 ms-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16" style="margin-right: 5%;">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                                Critical Care
+                            </li>
+                        </a>
+                        <a href="bariatric-surgery.html" style="text-decoration: none;">
+                            <li style="font-size: 18px; color: #e1e1e1;" class="mb-4 ms-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16" style="margin-right: 5%;">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                                Bariatric Surgery
+                            </li>
+                        </a>
+                        <a href="gastre.html" style="text-decoration: none;">
+                            <li style="font-size: 18px; color: #e1e1e1;" class="mb-4 ms-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16" style="margin-right: 5%;">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                                Gastroenterology
+                            </li>
+                        </a>
+                        <a href="neurology.html" style="text-decoration: none;">
+                            <li style="font-size: 18px; color: #e1e1e1;" class="mb-4 ms-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16" style="margin-right: 5%;">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                                Neurology
+                            </li>
+                        </a>
+                        <a href="robotic.html" style="text-decoration: none;">
+                            <li style="font-size: 18px; color: #e1e1e1;" class="mb-4 ms-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16" style="margin-right: 5%;">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                                Robotic Surgery
+                            </li>
+                        </a>
+                        <a href="orthopedic.html" style="text-decoration: none;">
+                            <li style="font-size: 18px; color: #e1e1e1;" class="mb-4 ms-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16" style="margin-right: 5%;">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                                Orthopedics
+                            </li>
+                        </a>
+                        <a href="transplant.html" style="text-decoration: none;">
+                            <li style="font-size: 18px; color: #e1e1e1;" class="mb-4 ms-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16" style="margin-right: 5%;">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                                Organ Transplantion
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h4 class="pt-5 pb-3 text-center">Useful Links</h4>
+                    <ul style="list-style: none outside;" class="m-0 p-0 pt-2">
+                        <a href="emergency.html" style="text-decoration: none;">
+                            <li style="font-size: 18px; color: #e1e1e1;" class="mb-4 ms-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16" style="margin-right: 5%;">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                                Emergency Hospitals 
+                            </li>
+                        </a>
+                        <a href="doctors.html" style="text-decoration: none;">
+                            <li style="font-size: 18px; color: #e1e1e1;" class="mb-4 ms-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16" style="margin-right: 5%;">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                                Doctors Appointment
+                            </li>
+                        </a>
+                        <a href="tests.html" style="text-decoration: none;">
+                            <li style="font-size: 18px; color: #e1e1e1;" class="mb-4 ms-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16" style="margin-right: 5%;">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                                Book Your Tests
+                            </li>
+                        </a>
+                        <a href="" style="text-decoration: none;">
+                            <li style="font-size: 18px; color: #e1e1e1;" class="mb-4 ms-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                    class="bi bi-arrow-right" viewBox="0 0 16 16" style="margin-right: 5%;">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                                </svg>
+                                Useful Contacts
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h4 class="pt-5 pb-4 text-center">Have a Question?</h4>
+                    <h5>Contact us on:</h5>
+                    <div class="mt-4 mb-5 text-light">
+                        <a href="#" style="text-decoration: none;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white"
+                                class="bi bi-linkedin me-4 ms-4" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                            </svg>
+                        </a>
+                        <a href="#" style="text-decoration: none;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white"
+                                class="bi bi-instagram me-4 ms-4" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                            </svg>
+                        </a>
+                        <a href="#" style="text-decoration: none;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white"
+                                class="bi bi-twitter me-4 ms-4" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                            </svg>
+                        </a>
+                        <a href="#" style="text-decoration: none;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white"
+                                class="bi bi-github me-4 ms-4" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                            </svg>
+                        </a>
+                        <a href="#" style="text-decoration: none;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white"
+                                class="bi bi-facebook me-4 ms-4" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                            </svg>
+                        </a>
+                    </div><br>
+                    <span style="font-size: 20px;">
+                        <b>Phone:</b> +91-8074****74
+                    </span><br><br><br>
+                    <span style="font-size: 20px;">
+                        <b>Mail:</b> <a style="color: blueviolet;"
+                            href="mailto:aksashank2002@gmail.com">aksashank2002@gmail.com</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer ends -->
+
+
+    <!-- Script tags -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+
+    <!-- Script tags -->
+</body>
+
+</html>
